@@ -189,7 +189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -818.54425, y: -500.74188}
+  m_AnchoredPosition: {x: -805.1, y: -500.74}
   m_SizeDelta: {x: 282.914, y: 78.5187}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114553214
@@ -311,7 +311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411139127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 180.86, z: 0}
+  m_LocalPosition: {x: -0.26, y: 183.04, z: 0}
   m_LocalScale: {x: 12.977188, y: 2.8613145, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -624,10 +624,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 921301283}
+  - component: {fileID: 921301284}
   m_Layer: 0
   m_Name: spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -639,13 +640,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921301281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4, y: 141.2, z: -1.4182749}
+  m_LocalPosition: {x: -0.08, y: 142.59, z: -1.4182749}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921301284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921301281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dce46b50177c8a4ab23e1d239d4a0aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoAspawnear: {fileID: 4881238565618876786, guid: 24f7653ed05761042b22596ace19ad16, type: 3}
+  objeto2Aspawnear: {fileID: 3517473644405017621, guid: 39220401663ce5844964ebff2508d33a, type: 3}
+  minY: 0
+  maxY: 0
+  Xpos: 140
+  mintiempoSpawn: 2
+  maxtiempoSpawn: 4
 --- !u!1 &979130339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Forcemultiplier: 10
   vidaPlayer: 100
+  textoVida: {fileID: 114553214}
 --- !u!58 &2026889103
 CircleCollider2D:
   m_ObjectHideFlags: 0

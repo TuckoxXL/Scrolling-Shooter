@@ -5,6 +5,7 @@ using UnityEngine;
 public class spawnEnemy : MonoBehaviour
 {
     public GameObject objetoAspawnear;
+    public GameObject objeto2Aspawnear;
     public float minY;
     public float maxY;
     public float Xpos;
@@ -15,6 +16,7 @@ public class spawnEnemy : MonoBehaviour
     void Start()
     {
         StartCoroutine(spawnObstaculo(Random.Range(mintiempoSpawn, maxtiempoSpawn), objetoAspawnear));
+        StartCoroutine(spawnObstaculo(Random.Range(mintiempoSpawn, maxtiempoSpawn), objeto2Aspawnear));
     }
 
     // Update is called once per frame

@@ -9,10 +9,10 @@ public class enemy : MonoBehaviour
 
     public float distance;
     public int damage;
-    public GameObject Player;
+    
     public void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
 
     public void Update()
@@ -40,11 +40,12 @@ public class enemy : MonoBehaviour
         }
     }
 
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            Player.GetComponent<player>().vidaPlayer -= damage;
+            player.GetComponent<player>().vidaPlayer -= damage;
         }
     }
 }
