@@ -20,4 +20,21 @@ public class enemy : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            Debug.Log("Enemy get shooted");
+
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+
+        }
+
+        if (collision.gameObject.CompareTag("limiteEnemy"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
