@@ -5,6 +5,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     public float Forcemultiplier;
+    public int vida = 100;
 
     // Start is called before the first frame update
     void Start()
