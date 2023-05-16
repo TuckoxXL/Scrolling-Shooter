@@ -33,4 +33,18 @@ public class player : MonoBehaviour
             SceneManager.LoadScene("derrota");
         }
     }
+
+    public void restarVida()
+    {
+        vidaPlayer -= 5;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("limiteEnemy"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

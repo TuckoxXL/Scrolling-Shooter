@@ -34,6 +34,12 @@ public class enemy : MonoBehaviour
 
         }
 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            player.GetComponent<player>().restarVida();
+            Destroy(this.gameObject);
+        }
+
         if (collision.gameObject.CompareTag("limiteEnemy"))
         {
             Destroy(this.gameObject);
