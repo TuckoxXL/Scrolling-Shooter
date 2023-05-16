@@ -15,5 +15,10 @@ public class mainCamare : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.up * Time.deltaTime * speed, Space.World);
+        if (transform.position.y >= 177f)
+        {
+            speed = 0;
+        }
     }
+
 }

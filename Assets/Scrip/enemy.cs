@@ -8,6 +8,8 @@ public class enemy : MonoBehaviour
     public float speed;
 
     public float distance;
+    public int damage;
+    public GameObject Player;
     public void Start()
     {
         
@@ -35,6 +37,14 @@ public class enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("limiteEnemy"))
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            Player.GetComponent<player>().vidaPlayer -= damage;
         }
     }
 }

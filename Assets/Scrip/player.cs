@@ -5,7 +5,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     public float Forcemultiplier;
-    public int vida = 100;
+    public int vidaPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +22,10 @@ public class player : MonoBehaviour
         horizontalforce *= Time.deltaTime;
         verticalforce *= Time.deltaTime;
         transform.Translate(horizontalforce, verticalforce, 0);
+
+        if (vidaPlayer <= 0)
+        {
+            
+        }
     }
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - limiteEnemy
+  - finalLimite
+  - enemy
   layers:
   - Default
   - TransparentFX
