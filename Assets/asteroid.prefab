@@ -102,7 +102,7 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 9
   distance: 0
-  damage: 20
+  damage: 10
 --- !u!61 &-5851237936220685933
 BoxCollider2D:
   m_ObjectHideFlags: 0

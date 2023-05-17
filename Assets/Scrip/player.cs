@@ -28,16 +28,17 @@ public class player : MonoBehaviour
 
         textoVida.text = "vida: " + vidaPlayer.ToString("00");
 
-        if(vidaPlayer == 0)
+        if(vidaPlayer <= 0)
         {
             SceneManager.LoadScene("derrota");
         }
     }
 
-    public void restarVida()
+    public void restarVida(int vidaRestar)
     {
-        vidaPlayer -= 5;
+        vidaPlayer -= vidaRestar;
     }
+
 
     public void OnCollisionEnter2D(Collision2D collision)
     {

@@ -24,11 +24,12 @@ public class mainCamare : MonoBehaviour
         {
             speed = 0;
             timer -= Time.deltaTime;
-            textoTimer.text = "" + timer.ToString("f0");
+            textoTimer.gameObject.SetActive(true);
+            textoTimer.text = "cargando la supercorrida " + timer.ToString(" 0");
 
             if (timer <= 0)
             {
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("victoria");
             }
         }
 
