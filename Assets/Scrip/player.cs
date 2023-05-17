@@ -10,6 +10,7 @@ public class player : MonoBehaviour
     public float Forcemultiplier;
     public int vidaPlayer;
     public Text textoVida;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +46,7 @@ public class player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("limiteEnemy"))
         {
-            Destroy(this.gameObject);
+            SceneManager.LoadScene("derrota");
         }
     }
 }

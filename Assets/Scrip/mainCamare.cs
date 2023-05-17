@@ -25,7 +25,7 @@ public class mainCamare : MonoBehaviour
             speed = 0;
             timer -= Time.deltaTime;
             textoTimer.gameObject.SetActive(true);
-            textoTimer.text = "cargando la supercorrida " + timer.ToString(" 0");
+            textoTimer.text = "cargando la supercorrida " + timer.ToString(" s0");
 
             if (timer <= 0)
             {
